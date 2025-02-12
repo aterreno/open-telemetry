@@ -29,4 +29,14 @@ registerInstrumentations({
   ],
 });
 
+const fetchInstrumentation = new FetchInstrumentation({
+  applyCustomAttributesOnSpan(span) {
+    span.setAttribute("http.method", "GET");
+  },
+});
+registerInstrumentations({
+  instrumentations: [fetchInstrumentation],
+});
+
+
 console.log("✅ OpenTelemetry initialized in frontend");
