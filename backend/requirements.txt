@@ -1,0 +1,7 @@
+fastapi
+fastapi-cors
+uvicorn
+opentelemetry-api
+opentelemetry-sdk
+opentelemetry-instrumentation-fastapi
+opentelemetry-exporter-otlp
